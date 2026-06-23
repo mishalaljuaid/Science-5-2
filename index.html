@@ -15,7 +15,7 @@
     -webkit-text-size-adjust: 100%;
   }
   .page-header {
-    background: #1a5c2e;
+    background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%);
     color: #fff;
     padding: 14px 16px;
     display: flex;
@@ -66,7 +66,7 @@
   .total-lbl { font-size: 13px; color: #888; margin-right: auto; white-space: nowrap; }
   .container { max-width: 860px; margin: 0 auto; padding: 14px 10px 70px; }
   .section-title {
-    background: #1a5c2e;
+    background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%);
     color: #fff;
     padding: 12px 16px;
     border-radius: 10px;
@@ -126,12 +126,12 @@
   .opt-letter {
     width: 30px; height: 30px;
     border-radius: 50%;
-    background: #eef5f0;
+    background: #eef7f1;
     display: flex; align-items: center; justify-content: center;
     font-size: 13px; font-weight: 700; flex-shrink: 0;
     color: #444;
   }
-  .opt.selected .opt-letter { background: #1a5c2e; color: #fff; }
+  .opt.selected .opt-letter { background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%); color: #fff; }
   .opt.correct  .opt-letter { background: #2e7d32; color: #fff; }
   .opt.wrong    .opt-letter { background: #c62828; color: #fff; }
   .tf-row { display: flex; gap: 10px; }
@@ -140,7 +140,7 @@
     margin-top: 14px;
     padding: 12px 0;
     width: 100%;
-    background: #1a5c2e;
+    background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -152,7 +152,7 @@
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
   }
-  .check-btn:active { background: #0f3d1e; }
+  .check-btn:active { background: linear-gradient(135deg, #145e2e 0%, #0a2912 100%); }
   .check-btn:disabled { opacity: 0.4; cursor: not-allowed; }
   .feedback {
     margin-top: 10px;
@@ -167,7 +167,7 @@
   .feedback.wrong   { background: #ffebee; color: #7f0000; border: 1px solid #ef9a9a; }
   .final-btn-wrap { text-align: center; margin-top: 28px; }
   .final-btn {
-    background: #1a5c2e;
+    background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%);
     color: #fff;
     border: none;
     padding: 15px 0;
@@ -181,7 +181,7 @@
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
   }
-  .final-btn:active { background: #0f3d1e; }
+  .final-btn:active { background: linear-gradient(135deg, #145e2e 0%, #0a2912 100%); }
   .result-box {
     display: none;
     background: #fff;
@@ -194,8 +194,8 @@
   .result-box h2 { font-size: 20px; margin-bottom: 6px; color: #1a1a2e; }
   .result-box .big-score { font-size: 56px; font-weight: 700; color: #1a5c2e; line-height: 1; margin: 14px 0 6px; }
   .result-box .out-of { font-size: 15px; color: #666; margin-bottom: 16px; }
-  .result-box .grade-bar { height: 10px; background: #eef5f0; border-radius: 10px; overflow: hidden; margin: 0 auto 16px; max-width: 280px; }
-  .result-box .grade-fill { height: 100%; border-radius: 10px; background: #1a5c2e; transition: width 1s ease; }
+  .result-box .grade-bar { height: 10px; background: #eef7f1; border-radius: 10px; overflow: hidden; margin: 0 auto 16px; max-width: 280px; }
+  .result-box .grade-fill { height: 100%; border-radius: 10px; background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%); transition: width 1s ease; }
   .result-box .msg { font-size: 18px; font-weight: 600; margin-bottom: 6px; }
   .result-box .sub { font-size: 14px; color: #666; margin-bottom: 18px; }
   .result-breakdown { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
@@ -239,6 +239,31 @@
   <div class="score-badge" id="live-score">الدرجة: — / ١٢٠</div>
 </div>
 
+
+<div style="
+  background: #fff;
+  border-bottom: 1px solid #dde3ed;
+  padding: 12px 16px;
+  text-align: center;
+">
+  <div style="
+    display: inline-block;
+    background: linear-gradient(135deg, #1a9645 0%, #1a7a3c 50%, #0f3d1e 100%);
+    border-radius: 12px;
+    padding: 11px 28px;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(26,90,46,0.18);
+  ">
+    <div style="
+      color:#ffd700;
+      font-size:15px;
+      font-weight:600;
+      line-height:1.6;
+      letter-spacing:0.4px;
+    ">عزيزي الطالب : اجتهد اليوم لتفخر بنفسك غداً</div>
+  </div>
+</div>
 <div class="student-bar">
   <label>اسم الطالب:</label>
   <input type="text" id="student-name" placeholder="اكتب اسمك هنا...">
